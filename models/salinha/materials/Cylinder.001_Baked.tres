@@ -1,0 +1,10 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://ctuypcdlq8jkf"]
+
+[ext_resource type="Texture2D" uid="uid://bmv7q25x1xmu3" path="res://models/salinha/salinha_Cylinder_28.png" id="1_w42jd"]
+
+[resource]
+resource_name = "Cylinder.001_Baked"
+cull_mode = 2
+shading_mode = 0
+vertex_color_use_as_albedo = true
+albedo_texture = ExtResource("1_w42jd")

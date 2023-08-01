@@ -1,0 +1,291 @@
+[remap]
+
+importer="scene"
+importer_version=1
+type="PackedScene"
+uid="uid://dhhgr2dahbhig"
+path="res://.godot/imported/salinha.glb-3fff783fe9065585848231567525ad2b.scn"
+
+[deps]
+
+source_file="res://models/salinha/salinha.glb"
+dest_files=["res://.godot/imported/salinha.glb-3fff783fe9065585848231567525ad2b.scn"]
+
+[params]
+
+nodes/root_type="Node3D"
+nodes/root_name="Scene Root"
+nodes/apply_root_scale=true
+nodes/root_scale=1.0
+meshes/ensure_tangents=true
+meshes/generate_lods=true
+meshes/create_shadow_meshes=false
+meshes/light_baking=0
+meshes/lightmap_texel_size=0.2
+skins/use_named_skins=true
+animation/import=true
+animation/fps=30
+animation/trimming=false
+animation/remove_immutable_tracks=true
+import_script/path=""
+_subresources={
+"materials": {
+"832.02.SCHIENALE1.001_Baked": {
+"use_external/enabled": true,
+"use_external/path": "res://models/salinha/materials/832.02.SCHIENALE1.001_Baked.tres"
+},
+"832.02.SCHIENALE1.002_Baked": {
+"use_external/enabled": true,
+"use_external/path": "res://models/salinha/materials/832.02.SCHIENALE1.002_Baked.tres"
+},
+"832.02.SCHIENALE1.003_Baked": {
+"use_external/enabled": true,
+"use_external/path": "res://models/salinha/materials/832.02.SCHIENALE1.003_Baked.tres"
+},
+"832.02.SCHIENALE1.004_Baked": {
+"use_external/enabled": true,
+"use_external/path": "res://models/salinha/materials/832.02.SCHIENALE1.004_Baked.tres"
+},
+"832.02.SCHIENALE1.005_Baked": {
+"use_external/enabled": true,
+"use_external/path": "res://models/salinha/materials/832.02.SCHIENALE1.005_Baked.tres"
+},
+"832.02.SCHIENALE1_Baked": {
+"use_external/enabled": true,
+"use_external/path": "res://models/salinha/materials/832.02.SCHIENALE1_Baked.tres"
+},
+"Cube.001_Baked": {
+"use_external/enabled": true,
+"use_external/path": "res://models/salinha/materials/Cube.001_Baked.tres"
+},
+"Cube.002_Baked": {
+"use_external/enabled": true,
+"use_external/path": "res://models/salinha/materials/Cube.002_Baked.tres"
+},
+"Cube.003_Baked": {
+"use_external/enabled": true,
+"use_external/path": "res://models/salinha/materials/Cube.003_Baked.tres"
+},
+"Cube.004_Baked": {
+"use_external/enabled": true,
+"use_external/path": "res://models/salinha/materials/Cube.004_Baked.tres"
+},
+"Cube.005_Baked": {
+"use_external/enabled": true,
+"use_external/path": "res://models/salinha/materials/Cube.005_Baked.tres"
+},
+"Cube.006_Baked": {
+"use_external/enabled": true,
+"use_external/path": "res://models/salinha/materials/Cube.006_Baked.tres"
+},
+"Cube.007_Baked": {
+"use_external/enabled": true,
+"use_external/path": "res://models/salinha/materials/Cube.007_Baked.tres"
+},
+"Cube.008_Baked": {
+"use_external/enabled": true,
+"use_external/path": "res://models/salinha/materials/Cube.008_Baked.tres"
+},
+"Cube.009_Baked": {
+"use_external/enabled": true,
+"use_external/path": "res://models/salinha/materials/Cube.009_Baked.tres"
+},
+"Cube.010_Baked": {
+"use_external/enabled": true,
+"use_external/path": "res://models/salinha/materials/Cube.010_Baked.tres"
+},
+"Cube.011_Baked": {
+"use_external/enabled": true,
+"use_external/path": "res://models/salinha/materials/Cube.011_Baked.tres"
+},
+"Cube.012_Baked": {
+"use_external/enabled": true,
+"use_external/path": "res://models/salinha/materials/Cube.012_Baked.tres"
+},
+"Cube.014_Baked": {
+"use_external/enabled": true,
+"use_external/path": "res://models/salinha/materials/Cube.014_Baked.tres"
+},
+"Cube.015_Baked": {
+"use_external/enabled": true,
+"use_external/path": "res://models/salinha/materials/Cube.015_Baked.tres"
+},
+"Cube.016_Baked": {
+"use_external/enabled": true,
+"use_external/path": "res://models/salinha/materials/Cube.016_Baked.tres"
+},
+"Cube.017_Baked": {
+"use_external/enabled": true,
+"use_external/path": "res://models/salinha/materials/Cube.017_Baked.tres"
+},
+"Cube.018_Baked": {
+"use_external/enabled": true,
+"use_external/path": "res://models/salinha/materials/Cube.018_Baked.tres"
+},
+"Cube.019_Baked": {
+"use_external/enabled": true,
+"use_external/path": "res://models/salinha/materials/Cube.019_Baked.tres"
+},
+"Cube.021_Baked": {
+"use_external/enabled": true,
+"use_external/path": "res://models/salinha/materials/Cube.021_Baked.tres"
+},
+"Cube.022_Baked": {
+"use_external/enabled": true,
+"use_external/path": "res://models/salinha/materials/Cube.022_Baked.tres"
+},
+"Cube.023_Baked": {
+"use_external/enabled": true,
+"use_external/path": "res://models/salinha/materials/Cube.023_Baked.tres"
+},
+"Cube.024_Baked": {
+"use_external/enabled": true,
+"use_external/path": "res://models/salinha/materials/Cube.024_Baked.tres"
+},
+"Cube.025_Baked": {
+"use_external/enabled": true,
+"use_external/path": "res://models/salinha/materials/Cube.025_Baked.tres"
+},
+"Cube.027_Baked": {
+"use_external/enabled": true,
+"use_external/path": "res://models/salinha/materials/Cube.027_Baked.tres"
+},
+"Cube.028_Baked": {
+"use_external/enabled": true,
+"use_external/path": "res://models/salinha/materials/Cube.028_Baked.tres"
+},
+"Cube.029_Baked": {
+"use_external/enabled": true,
+"use_external/path": "res://models/salinha/materials/Cube.029_Baked.tres"
+},
+"Cube.031_Baked": {
+"use_external/enabled": true,
+"use_external/path": "res://models/salinha/materials/Cube.031_Baked.tres"
+},
+"Cube.032_Baked": {
+"use_external/enabled": true,
+"use_external/path": "res://models/salinha/materials/Cube.032_Baked.tres"
+},
+"Cube.033_Baked": {
+"use_external/enabled": true,
+"use_external/path": "res://models/salinha/materials/Cube.033_Baked.tres"
+},
+"Cube.034_Baked": {
+"use_external/enabled": true,
+"use_external/path": "res://models/salinha/materials/Cube.034_Baked.tres"
+},
+"Cube.035_Baked": {
+"use_external/enabled": true,
+"use_external/path": "res://models/salinha/materials/Cube.035_Baked.tres"
+},
+"Cube.036_Baked": {
+"use_external/enabled": true,
+"use_external/path": "res://models/salinha/materials/Cube.036_Baked.tres"
+},
+"Cube.037_Baked": {
+"use_external/enabled": true,
+"use_external/path": "res://models/salinha/materials/Cube.037_Baked.tres"
+},
+"Cube.038_Baked": {
+"use_external/enabled": true,
+"use_external/path": "res://models/salinha/materials/Cube.038_Baked.tres"
+},
+"Cube.039_Baked": {
+"use_external/enabled": true,
+"use_external/path": "res://models/salinha/materials/Cube.039_Baked.tres"
+},
+"Cube.040_Baked": {
+"use_external/enabled": true,
+"use_external/path": "res://models/salinha/materials/Cube.040_Baked.tres"
+},
+"Cube.041_Baked": {
+"use_external/enabled": true,
+"use_external/path": "res://models/salinha/materials/Cube.041_Baked.tres"
+},
+"Cube.042_Baked": {
+"use_external/enabled": true,
+"use_external/path": "res://models/salinha/materials/Cube.042_Baked.tres"
+},
+"Cube.043_Baked": {
+"use_external/enabled": true,
+"use_external/path": "res://models/salinha/materials/Cube.043_Baked.tres"
+},
+"Cube.044_Baked": {
+"use_external/enabled": true,
+"use_external/path": "res://models/salinha/materials/Cube.044_Baked.tres"
+},
+"Cube.045_Baked": {
+"use_external/enabled": true,
+"use_external/path": "res://models/salinha/materials/Cube.045_Baked.tres"
+},
+"Cube.046_Baked": {
+"use_external/enabled": true,
+"use_external/path": "res://models/salinha/materials/Cube.046_Baked.tres"
+},
+"Cube.047_Baked": {
+"use_external/enabled": true,
+"use_external/path": "res://models/salinha/materials/Cube.047_Baked.tres"
+},
+"Cube.048_Baked": {
+"use_external/enabled": true,
+"use_external/path": "res://models/salinha/materials/Cube.048_Baked.tres"
+},
+"Cube_Baked": {
+"use_external/enabled": true,
+"use_external/path": "res://models/salinha/materials/Cube_Baked.tres"
+},
+"Cylinder.001_Baked": {
+"use_external/enabled": true,
+"use_external/path": "res://models/salinha/materials/Cylinder.001_Baked.tres"
+},
+"Cylinder.002_Baked": {
+"use_external/enabled": true,
+"use_external/path": "res://models/salinha/materials/Cylinder.002_Baked.tres"
+},
+"Cylinder.003_Baked": {
+"use_external/enabled": true,
+"use_external/path": "res://models/salinha/materials/Cylinder.003_Baked.tres"
+},
+"Cylinder.004_Baked": {
+"use_external/enabled": true,
+"use_external/path": "res://models/salinha/materials/Cylinder.004_Baked.tres"
+},
+"Cylinder.005_Baked": {
+"use_external/enabled": true,
+"use_external/path": "res://models/salinha/materials/Cylinder.005_Baked.tres"
+},
+"Cylinder.006_Baked": {
+"use_external/enabled": true,
+"use_external/path": "res://models/salinha/materials/Cylinder.006_Baked.tres"
+},
+"Cylinder.007_Baked": {
+"use_external/enabled": true,
+"use_external/path": "res://models/salinha/materials/Cylinder.007_Baked.tres"
+},
+"Cylinder.008_Baked": {
+"use_external/enabled": true,
+"use_external/path": "res://models/salinha/materials/Cylinder.008_Baked.tres"
+},
+"Cylinder.009_Baked": {
+"use_external/enabled": true,
+"use_external/path": "res://models/salinha/materials/Cylinder.009_Baked.tres"
+},
+"Cylinder.010_Baked": {
+"use_external/enabled": true,
+"use_external/path": "res://models/salinha/materials/Cylinder.010_Baked.tres"
+},
+"Cylinder.012_Baked": {
+"use_external/enabled": true,
+"use_external/path": "res://models/salinha/materials/Cylinder.012_Baked.tres"
+},
+"Cylinder_Baked": {
+"use_external/enabled": true,
+"use_external/path": "res://models/salinha/materials/Cylinder_Baked.tres"
+},
+"Plane_Baked": {
+"use_external/enabled": true,
+"use_external/path": "res://models/salinha/materials/Plane_Baked.tres"
+}
+}
+}
+gltf/embedded_image_handling=1

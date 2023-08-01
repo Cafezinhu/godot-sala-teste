@@ -1,0 +1,10 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://dsv0a8g3d3non"]
+
+[ext_resource type="Texture2D" uid="uid://bayn8ixtjah20" path="res://models/salinha/salinha_832.02.png" id="1_6eo8k"]
+
+[resource]
+resource_name = "832.02.SCHIENALE1.001_Baked"
+cull_mode = 2
+shading_mode = 0
+vertex_color_use_as_albedo = true
+albedo_texture = ExtResource("1_6eo8k")

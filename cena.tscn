@@ -1,0 +1,116 @@
+[gd_scene load_steps=14 format=3 uid="uid://dqqsf1lc4nmmq"]
+
+[ext_resource type="PackedScene" uid="uid://clc5dre31iskm" path="res://addons/godot-xr-tools/xr/start_xr.tscn" id="1_ybfme"]
+[ext_resource type="PackedScene" uid="uid://bl2nuu3qhlb5k" path="res://addons/godot-xr-tools/functions/movement_direct.tscn" id="2_2is88"]
+[ext_resource type="PackedScene" uid="uid://b6bk2pj8vbj28" path="res://addons/godot-xr-tools/functions/movement_turn.tscn" id="3_hpq04"]
+[ext_resource type="PackedScene" uid="uid://ctltchlf2j2r4" path="res://addons/xr-simulator/XRSimulator.tscn" id="4_0v6xq"]
+[ext_resource type="PackedScene" uid="uid://diyu06cw06syv" path="res://addons/godot-xr-tools/player/player_body.tscn" id="4_f2dn8"]
+[ext_resource type="Script" path="res://addons/godot-xr-tools/overrides/ground_physics_settings.gd" id="5_yu4q4"]
+[ext_resource type="Script" path="res://FPS.gd" id="8_j4cm5"]
+[ext_resource type="PackedScene" uid="uid://dhhgr2dahbhig" path="res://models/salinha/salinha.glb" id="8_m3qbs"]
+[ext_resource type="PackedScene" uid="uid://bdhgyqdxj2bci" path="res://models/sala.glb" id="9_aipwo"]
+
+[sub_resource type="Resource" id="Resource_ps8gt"]
+script = ExtResource("5_yu4q4")
+flags = 0
+move_drag = 100.0
+move_traction = 30.0
+stop_on_slope = true
+move_max_slope = 45.0
+jump_max_slope = 45.0
+jump_velocity = 3.0
+bounciness = 0.0
+bounce_threshold = 1.0
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_htmm0"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_asck3"]
+size = Vector3(11.6768, 0.115913, 17.2268)
+
+[sub_resource type="Environment" id="Environment_ulpod"]
+background_mode = 1
+background_color = Color(0.47451, 0.615686, 0.670588, 1)
+ambient_light_source = 2
+ambient_light_color = Color(1, 1, 1, 1)
+
+[node name="Node3D" type="Node3D"]
+
+[node name="StartXR" parent="." instance=ExtResource("1_ybfme")]
+physics_rate_multiplier = 1
+
+[node name="XROrigin3D" type="XROrigin3D" parent="."]
+
+[node name="XRCamera3D" type="XRCamera3D" parent="XROrigin3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.7, 0)
+
+[node name="Left" type="XRController3D" parent="XROrigin3D"]
+tracker = &"left_hand"
+pose = &"aim"
+
+[node name="MovementDirect" parent="XROrigin3D/Left" instance=ExtResource("2_2is88")]
+strafe = true
+
+[node name="Right" type="XRController3D" parent="XROrigin3D"]
+tracker = &"right_hand"
+pose = &"aim"
+
+[node name="MovementTurn" parent="XROrigin3D/Right" instance=ExtResource("3_hpq04")]
+turn_mode = 1
+
+[node name="Label3D" type="Label3D" parent="XROrigin3D/Right"]
+text = "0"
+script = ExtResource("8_j4cm5")
+
+[node name="PlayerBody" parent="XROrigin3D" instance=ExtResource("4_f2dn8")]
+physics = SubResource("Resource_ps8gt")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="XROrigin3D/PlayerBody"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.00453, 0)
+shape = SubResource("CapsuleShape3D_htmm0")
+
+[node name="XRSimulator" parent="." instance=ExtResource("4_0v6xq")]
+xr_origin = NodePath("../XROrigin3D")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.335436, 0)
+shape = SubResource("BoxShape3D_asck3")
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_ulpod")
+
+[node name="salinha" parent="." instance=ExtResource("8_m3qbs")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.92631, 0.191482, -0.0178108)
+visible = false
+
+[node name="sala" parent="." instance=ExtResource("9_aipwo")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.51848, -0.199021, -0.636661)
+
+[node name="VoxelGI" type="VoxelGI" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.957389, -1.27293)
+size = Vector3(8.92472, 4.91712, 6.766)
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(0.0261926, -0.669196, 0.742625, 0.023588, 0.743086, 0.66878, -0.999379, 0, 0.0352483, 0, 0, 0)
+shadow_enabled = true
+
+[node name="OmniLight3D" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.94075, 2.56254, 1.32393)
+light_energy = 0.4
+shadow_enabled = true
+
+[node name="OmniLight3D2" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.94075, 2.56254, 0.275613)
+light_energy = 0.4
+shadow_enabled = true
+
+[node name="OmniLight3D3" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.94075, 2.56254, -0.770457)
+light_energy = 0.4
+shadow_enabled = true
+
+[node name="OmniLight3D4" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.94075, 2.56254, -1.84063)
+light_energy = 0.4
+shadow_enabled = true

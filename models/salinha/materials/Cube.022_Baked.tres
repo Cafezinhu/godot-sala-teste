@@ -1,0 +1,10 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://d3dn4k1i875la"]
+
+[ext_resource type="Texture2D" uid="uid://di16ut0mfbs61" path="res://models/salinha/salinha_Cube_1.png" id="1_4nq35"]
+
+[resource]
+resource_name = "Cube.022_Baked"
+cull_mode = 2
+shading_mode = 0
+vertex_color_use_as_albedo = true
+albedo_texture = ExtResource("1_4nq35")
